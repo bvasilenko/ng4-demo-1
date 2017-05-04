@@ -1,0 +1,32 @@
+$h: 100px;
+$hh: 300px;
+
+.h-md {
+    height: $h;
+}
+.h-lg {
+    height: 1.5 * $h;
+}
+.h-2x {
+    height: 2 * $h;
+}
+.h-3x {
+    height: 3 * $h;
+}
+
+.hh-md {
+    height: $hh;
+}
+.hh-lg {
+    height: 1.5 * $hh;
+}
+.hh-2x {
+    height: 2 * $hh;
+}
+.hh-3x {
+    height: 3 * $hh;
+}
+
+.h-auto {
+    height: 100vh;
+}

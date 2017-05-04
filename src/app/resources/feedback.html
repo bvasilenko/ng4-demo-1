@@ -1,0 +1,24 @@
+<div class="section">
+    <div class="feedback-filter">
+        <dropdown 
+            buttonClass="btn btn-default btn-block"
+            [selected]="selectedFilter"
+            [options]="filterOptions"
+            (selectedChange)="setSelectedFilter(selectedFilter)"
+        ></dropdown>
+    </div>
+    <div class="section-title">Feedback</div>
+    <div *ngIf="!posts?.length" class="feedback-wrapper center-hv h-2x"><i class="fa fa-spin fa-refresh fa-lg"></i></div>
+    <div class="feedback-wrapper" *ngFor="let post of posts">
+        <div class="feedback-meta">
+            <rating [ngModel]="post.rating" [readonly]="true"></rating>
+            <div><small>{{post.created|date}}</small></div>
+        </div>
+        <img src="http://placehold.it/42x42" class="feedback-image">
+        <div class="feedback-content">
+            <div class="feedback-title">{{post.messageTitle}}<small> ({{post.contribScore}} Contributor Score)</small></div>
+            <div class="feedback-body">{{post.messageBody}}</div>
+            <a class="feedback-link" href="#">Read More</a>
+        </div>
+    </div>
+</div>

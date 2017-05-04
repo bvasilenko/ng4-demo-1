@@ -1,0 +1,45 @@
+@import "../../theme/theme-variables";
+
+$related-column-text: lighten($gray-light, 15%);
+
+.related-resource {
+    color: $related-column-text;
+    font-size: 95%;
+    margin: 18px 0 5px 25px;
+    
+    .preview-image {
+        margin-bottom: 10px;
+    }
+
+    .resource-title {
+        font-weight: 600;
+
+        >a, 
+        >a:hover,
+        >a:focus {
+            color: $related-column-text;
+        }
+    }
+
+    rating {
+        position: relative;
+        top: 6px;
+        color: $knaqq-accent;
+        margin-left: 5px;
+    }
+
+    .source {
+        margin-top: 15px;
+
+        color: $related-column-text;
+        font-size: 11px;
+        .source-image {
+            width: 11px;
+            height: 11px;
+        }
+
+        .source-title {
+            margin-left: 16px;
+        }
+    }
+}

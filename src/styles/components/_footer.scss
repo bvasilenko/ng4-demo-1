@@ -1,0 +1,29 @@
+@import "../theme/theme-variables";
+
+.footer {
+    background: $knaqq-primary;
+    color: $knaqq-light;
+    .footer-wrapper {
+        margin: 30px 50px;
+
+        a {
+            color: $knaqq-light;
+        }
+
+        h1 {
+            margin-top: 7px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .footer-link {
+            margin: 15px 0;
+            font-size: 16px;
+            font-weight: 200;
+        }
+    }
+}

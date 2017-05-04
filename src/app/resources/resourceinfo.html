@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="content">
+            <div class="pull-left-sm">
+                <img src="http://placehold.it/140x140" class="preview-image">
+            </div>
+            <div class="resource-details">
+                <div class="resource-title">{{resource.title}}</div>
+                <div>
+                    <rating [ngModel]="resource.rating" [readonly]="true"></rating>
+                    <small>({{resource.reviewCount}} reviews)</small>
+                </div>
+                <div class="source">
+                    <img src="http://placehold.it/16x16" class="source-image"><a href="#">{{resource.type}}</a> | <a href="#">{{resource.urlShort}}</a>
+                </div>
+                <div class="tags">
+                    <span *ngFor="let tag of resource.tags"><a href="#">{{tag}}</a> </span>
+                </div>
+            </div>
+        </div>
+        <div class="sidecol resource-toolbar">
+            <a role="button" class="btn btn-danger btn-block">Visit Site</a>
+            <div class="resource-buttons">
+                <a role="button" class="resource-button"><i class="fa fa-star"></i> Write Review</a>
+                <a role="button" class="resource-button"><i class="fa fa-bookmark"></i> Bookmark</a>
+                <a role="button" class="resource-button"><i class="fa fa-share-alt"></i> Share</a>
+            </div>
+        </div>
+    </div>
+</div>

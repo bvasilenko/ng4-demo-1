@@ -1,0 +1,15 @@
+<div class="column tiles">
+    <div class="column-title">Related Resources</div>
+    <div *ngFor="let resource of resources" class="related-resource tile">
+        <div class="resource-title"><a href="#">{{resource.title}}</a></div>
+        <rating [ngModel]="resource.rating" [readonly]="true"></rating>
+        <div class="source">
+            <img src="http://placehold.it/16x16" class="source-image">
+            <span class="source-title">
+                <a href="#">{{resource.type}}</a>
+                <br />
+                <a href="#">{{resource.urlShort}}</a>
+            </span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+@import "../theme/theme-variables";
+
+.page {
+    .content {
+        @extend .col-sm-10;
+
+        .section {
+            margin: 40px 35px;
+    
+            .section-title {
+                font-size: 20px;
+                font-weight: 500;
+                color: $knaqq-primary;
+            }
+        }
+    }
+    .sidecol {
+        @extend .col-sm-offset-10;
+        
+        margin-top: 40px;
+
+        .column {
+            padding-top: 20px;
+            padding-left: 50px;
+            padding-bottom: 15px;
+            padding-right: 10px;
+
+            @media (min-width: $screen-sm) {
+                margin-left: -15px;
+                margin-right: -30px;
+                padding-left: 0;
+            }
+
+            .column-title {
+                margin-left: 15px;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+    }
+}

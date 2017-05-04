@@ -1,0 +1,14 @@
+.row-text {
+    @extend .row;
+    .left {
+        @extend .col-sm-3;
+    }
+    .center {
+        @extend .col-sm-6;
+        @extend .center-sm;
+    }
+    .right {
+        @extend .col-sm-3;
+        @extend .right-sm;
+    }
+}

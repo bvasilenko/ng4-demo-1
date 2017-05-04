@@ -1,0 +1,23 @@
+.source {
+    .source-image {
+        float: left;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        margin-top: 1px;
+        margin-right: 5px;
+    }
+
+    .source-title {
+        display: block;
+        margin-left: 20px;
+    }
+
+    a, 
+    a:active, 
+    a:hover,
+    a:focus,
+    a:visited {
+        color: $gray-light;
+    }
+}

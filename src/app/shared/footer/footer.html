@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="footer-wrapper">
+        <div class="row">
+            <h1 class="col-sm-12">Knaqq</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="row">
+                    <h4 class="col-sm-12">Browse tutorials by topic</h4>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="footer-link" *ngFor="let category of categories.slice(0, 4)"><a href="#">{{category.name}}</a></div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="footer-link" *ngFor="let category of categories.slice(4, 8)"><a href="#">{{category.name}}</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="row">
+                    <h4 class="col-sm-12">Browse by type</h4>
+                    <div class="col-sm-12">
+                        <div class="footer-link" *ngFor="let type of types"><a href="#">{{type.name}}</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

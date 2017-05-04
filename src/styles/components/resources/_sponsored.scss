@@ -1,0 +1,14 @@
+@import "../../theme/theme-variables";
+
+$sponsored-text: lighten($gray-light, 15%);
+
+.sponsored {
+    .column {
+        .column-title {
+            color: $sponsored-text;
+        }
+        .sponsored-link {
+            margin-top: 10px;
+        }
+    }
+}

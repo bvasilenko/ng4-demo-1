@@ -1,0 +1,20 @@
+
+<div *ngIf="!resource" class="center-hv h-auto preloader">
+    <div></div>
+</div>
+<div *ngIf="resource">
+    <resourceinfo [resource]="resource"></resourceinfo>
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <feedback [posts]="feedbackPosts" (filterChange)="loadFeedback($event)"></feedback>
+                <related-tiles [resources]="relatedResources"></related-tiles>
+            </div>
+            <div class="sidecol">
+                <related-column [resources]="relatedResources"></related-column>
+                <sponsored></sponsored>
+            </div>
+        </div>
+    </div>
+</div>
+<footer></footer>

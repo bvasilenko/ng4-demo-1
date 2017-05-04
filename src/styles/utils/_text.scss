@@ -1,0 +1,12 @@
+@import "../theme/theme-variables";
+
+.center-sm {
+    @media (min-width: $screen-sm) {
+        text-align: center;
+    }
+}
+.right-sm {
+    @media (min-width: $screen-sm) {
+        text-align: right;
+    }
+}

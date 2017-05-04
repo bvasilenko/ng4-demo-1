@@ -1,0 +1,23 @@
+<div class="row group">
+    <p class="col-sm-12">Browse by Category</p>
+</div>
+<div class="row">
+    <div class="col-sm-5">
+        <li *ngFor="let category of categories.slice(0, 4)"><a href="#">{{category.name}}</a></li>
+    </div>
+    <div class="col-sm-7">
+        <li *ngFor="let category of categories.slice(4, 8)"><a href="#">{{category.name}}</a></li>
+    </div>
+</div>
+<div class="row group by-type">
+    <p class="col-sm-12">Browse by Type</p>
+</div>
+<div class="row-text">
+    <div *ngFor="let type of types; let index = index" [ngClass]="{
+        'left':     index % 3 === 0,
+        'center':   index % 3 === 1,
+        'right':    index % 3 === 2
+    }">
+        <a href="#">{{type.name}}</a>
+    </div>
+</div>

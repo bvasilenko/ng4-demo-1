@@ -1,0 +1,13 @@
+@import "../../theme/theme-variables";
+
+$related-column-text: lighten($gray-light, 15%);
+
+.related-column {
+    .column {
+        background: $knaqq-light-warm;
+        
+        .column-title {
+            color: $related-column-text;
+        }
+    }
+}
